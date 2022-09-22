@@ -242,7 +242,6 @@ img {
     top: 0;
     left: 0;
     opacity: 1;
-    background-color: rgba(174, 176, 183, 0.8);
 }
 
 .backdrop.is-hidden {
@@ -251,19 +250,27 @@ img {
 }
 .modal {
     position: absolute;
-    width: 528px;
-    height: 581px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+    width: 528px;
+    height: 581px;
     background-color: #fff;
 }
 .but-close {
     position: absolute;
     top: 0;
     right: 0;
+    width: 30px;
+    height: 30px;
     margin-top: 8px;
     margin-right: 8px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.close-icon {
+    fill: var(--logo-black);
 }
 .but-list {
     align-items: center;

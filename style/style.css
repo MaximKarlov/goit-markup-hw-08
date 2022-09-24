@@ -3,11 +3,13 @@
     --logo-black: rgba(0, 0, 0, 1);
     --text-color: #212121;
     --foot-box-color: rgba(47, 48, 58, 1);
+    --foot-box-color-opacity: rgba(47, 48, 58, 0.8);
     --active-color: rgba(33, 150, 243, 1);
     --contacts-color: rgba(117, 117, 117, 1);
     --buttons-color: rgba(245, 244, 250, 1);
     --border-line: rgba(238, 238, 238, 1);
     --social-link-color: rgba(175, 177, 184, 1);
+    --overlay: rgba(47, 48, 58, 0.4);
 }
 h1,
 h2,
@@ -183,7 +185,7 @@ img {
 
 .secbox {
     background-color: #2f303a;
-    background: linear-gradient(var(--foot-box-color), var(--foot-box-color)), url("../img/efectchoise.jpg");
+    background: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise.jpg");
     background-repeat: no-repeat;
     background-position: center;
     padding: 200px 0;
@@ -351,7 +353,7 @@ img {
     position: relative;
     width: 100%;
     height: 100%;
-    background: var(--foot-box-color);
+    background: var(--foot-box-color-opacity);
 }
 
 .bottom-text {
@@ -363,7 +365,7 @@ img {
     bottom: 0;
     width: 100%;
     height: 70px;
-    background-color: var(--foot-box-color);
+    background-color: var(--foot-box-color-opacity);
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;

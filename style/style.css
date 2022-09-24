@@ -178,11 +178,12 @@ img {
 .list-a:hover,
 .list-a:focus {
     color: var(--active-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .secbox {
     background-color: #2f303a;
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/efectchoise.jpg);
+    background: linear-gradient(var(--foot-box-color), var(--foot-box-color)), url(../img/efectchoise.jpg);
     background-repeat: no-repeat;
     background-position: center;
     padding: 200px 0;
@@ -244,6 +245,8 @@ img {
     top: 0;
     left: 0;
     opacity: 1;
+    transition-property: scale(2.5);
+    transition-duration: 2000ms;
 }
 
 .backdrop.is-hidden {
@@ -292,10 +295,12 @@ img {
     color: var(--text-white);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .but-order:hover .backdrop {
     opacity: 0;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .advantage-h3,
@@ -335,6 +340,35 @@ img {
     display: flex;
     align-items: center;
     gap: 30px;
+}
+.positition {
+    position: fixed;
+}
+.bottom-box
+/* .port-bottom-box  */ {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--foot-box-color);
+}
+
+.bottom-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: var(--foot-box-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-white);
 }
 
 .ourteambox {
@@ -401,14 +435,17 @@ img {
 }
 .foot-click:hover {
     background-color: var(--active-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .click:hover {
     background-color: var(--active-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .click:hover svg,
 .foot-click svg {
     fill: var(--text-white);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customers-icon {
@@ -431,6 +468,7 @@ img {
 .regular-click:focus svg {
     border-color: var(--active-color);
     fill: var(--active-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footbox {
@@ -506,13 +544,13 @@ img {
     gap: 30px;
     flex-basis: calc(100% / 3 - 30px);
 }
-.bord-port:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .border {
+    position: relative;
     border: 1px solid #eeeeee;
     border-top: none;
     padding: 20px 24px;
+    z-index: 1;
 }
 .title-p {
     color: var(--contacts-color);
@@ -530,4 +568,46 @@ img {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+}
+.bord-port:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.bord-port:hover .port-text,
+.bord-port:focus .port-text {
+    opacity: 1;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation-name: test;
+    animation-duration: 1000ms;
+}
+
+@keyframes test {
+    0% {
+        top: 100%;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+.port-bottom-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.port-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    background-color: var(--active-color);
 }

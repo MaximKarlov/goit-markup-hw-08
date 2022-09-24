@@ -447,7 +447,7 @@ img {
 .click:hover svg,
 .foot-click svg {
     fill: var(--text-white);
-    transition: fill 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customers-icon {

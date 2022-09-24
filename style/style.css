@@ -183,7 +183,7 @@ img {
 
 .secbox {
     background-color: #2f303a;
-    background: linear-gradient(var(--foot-box-color), var(--foot-box-color)), url(../img/efectchoise.jpg);
+    background: linear-gradient(var(--foot-box-color), var(--foot-box-color)), url("../img/efectchoise.jpg");
     background-repeat: no-repeat;
     background-position: center;
     padding: 200px 0;

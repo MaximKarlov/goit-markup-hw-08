@@ -126,6 +126,7 @@ img {
     color: var(--text-color);
     text-transform: capitalize;
     padding: 32px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-wrap {
     display: flex;
@@ -141,6 +142,7 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--contacts-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts {
     padding: 32px 0;
@@ -180,7 +182,6 @@ img {
 .list-a:hover,
 .list-a:focus {
     color: var(--active-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .secbox {
@@ -236,6 +237,8 @@ img {
     margin: 0 auto;
     margin-top: 30px;
     padding: 10px 32px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
@@ -298,13 +301,10 @@ img {
     color: var(--text-white);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .but-order:hover .backdrop {
     opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .advantage-h3,
@@ -424,6 +424,7 @@ img {
     width: 20px;
     height: 20px;
     fill: var(--social-link-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .click,
 .foot-click {
@@ -433,29 +434,28 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .foot-click {
     background-color: rgba(255, 255, 255, 0.1);
 }
 .foot-click:hover {
     background-color: var(--active-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .click:hover {
     background-color: var(--active-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .click:hover svg,
 .foot-click svg {
     fill: var(--text-white);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customers-icon {
     width: 106px;
     height: 60px;
     fill: var(--social-link-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .regular-click {
     display: flex;
@@ -465,6 +465,7 @@ img {
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .regular-click:hover,
 .regular-click:hover svg,
@@ -472,7 +473,6 @@ img {
 .regular-click:focus svg {
     border-color: var(--active-color);
     fill: var(--active-color);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footbox {
@@ -541,6 +541,8 @@ img {
     text-transform: capitalize;
     border-radius: 4px;
     padding: 6px 22px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bord-wrap {
@@ -571,32 +573,15 @@ img {
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.bord-port:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.bord-port {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.bord-port:hover .port-text,
-.bord-port:focus .port-text {
-    opacity: 1;
-    animation-name: textup;
-    animation-duration: 250ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.bord-port:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-@keyframes textup {
-    0% {
-        top: 100%;
-        left: 0;
-    }
-    100% {
-        top: 0;
-        left: 0;
-    }
-}
 .port-bottom-box {
     position: relative;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
 }
 .port-text {
@@ -613,4 +598,20 @@ img {
     letter-spacing: 0.03em;
     color: #ffffff;
     background-color: var(--active-color);
+    transform: translateY(100%);
+    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+li:hover .port-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* @keyframes textup {
+    0% {
+        left: 0;
+        top: 100%;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+} */

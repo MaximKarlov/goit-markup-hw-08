@@ -281,12 +281,11 @@ img {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #fff;
-}
-.close-icon-pos {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .close-icon {
     fill: var(--logo-black);
 }

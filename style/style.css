@@ -199,7 +199,7 @@ img {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
+    text-transform: `rcase;
     color: var(--text-white);
     margin: 0 auto;
 }
@@ -501,6 +501,10 @@ img {
     color: var(--text-white);
     margin-bottom: 20px;
 }
+.subscribe {
+    margin: 12px 0 0 93px;
+}
+
 .foot-social {
     width: 206px;
     display: flex;
@@ -515,6 +519,32 @@ img {
 }
 .nul-padding {
     padding-bottom: 0;
+}
+
+.input-email {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    background-color: var(--foot-box-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.subscribe-btn {
+    width: 200px;
+    height: 50px;
+    left: 1185px;
+    top: 2784px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    background: #2196f3;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--text-white);
+    text-transform: capitalize;
 }
 /********************* PORTFOLIO *********************/
 

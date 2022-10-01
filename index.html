@@ -60,6 +60,31 @@
                         <button type="button" class="but-order" data-modal-open>Замовити послугу</button>
                         <div class="backdrop is-hidden" data-modal>
                             <div class="modal">
+                                <h2 class="title-modal">залиште свої дані, ми вам передзвонимо</h2>
+                                <ul>
+                                    <li class="item-modal">
+                                        <label for="name">Ім'я</label>
+                                        <input type="text" name="name" id="name" class="input-modal" />
+                                    </li>
+                                    <li class="itrem-modal">
+                                        <label for="phone" title="Тел.">Телефон</label>
+                                        <input type="tel" name="tel" id="tel" class="input-modal" />
+                                    </li>
+                                    <li class="item-modal">
+                                        <label for="email">Пошта</label>
+                                        <input type="email" name="email" id="email" class="input-modal" />
+                                    </li>
+                                    <li class="item-modal">
+                                        <label for="comments">Коментар</label>
+                                        <textarea
+                                            name="comments"
+                                            id="comments"
+                                            cols="30"
+                                            rows="10"
+                                            placeholder="Введіть коментар"></textarea>
+                                    </li>
+                                </ul>
+
                                 <button data-modal-close class="but-close">
                                     <svg width="11" height="11" class="close-icon">
                                         <use href="./img/icons.svg#close"></use>

@@ -66,7 +66,7 @@
                                         <label for="name">Ім'я</label>
                                         <input type="text" name="name" id="name" class="input-modal" />
                                     </li>
-                                    <li class="itrem-modal">
+                                    <li class="item-modal">
                                         <label for="phone" title="Тел.">Телефон</label>
                                         <input type="tel" name="tel" id="phone" class="input-modal" />
                                     </li>
@@ -81,10 +81,11 @@
                                             id="comments"
                                             cols="30"
                                             rows="10"
-                                            placeholder="Введіть коментар"></textarea>
+                                            placeholder="Введіть коментар"
+                                            class="input-coment"></textarea>
                                     </li>
                                 </ul>
-
+                                <button type="submit" class="btn-send">Відправити</button>
                                 <button data-modal-close class="but-close">
                                     <svg width="11" height="11" class="close-icon">
                                         <use href="./img/icons.svg#close"></use>
@@ -527,7 +528,6 @@
                                     placeholder="E-mail"
                                     autocomplete="none"
                                     class="input-email" />
-                                <!-- <button type="button" class="suybscribe-btn"></button> -->
                                 <button type="submit" class="subscribe-btn">
                                     <p class="subscribe-text">підписатись</p>
                                     <svg width="24" height="24" class="foot-email-svg">

@@ -199,7 +199,7 @@ img {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-transform: `rcase;
+    text-transform: uppercase;
     color: var(--text-white);
     margin: 0 auto;
 }
@@ -504,7 +504,9 @@ img {
 .subscribe {
     margin: 12px 0 0 93px;
 }
-
+.subscribe-element {
+    display: flex;
+}
 .foot-social {
     width: 206px;
     display: flex;
@@ -529,23 +531,51 @@ img {
     background-color: var(--foot-box-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    padding: 15px 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.input-email:hover,
+.input-email:active,
+.input-email:focus {
+    outline: none;
 }
 
 .subscribe-btn {
+    cursor: pointer;
     width: 200px;
     height: 50px;
-    left: 1185px;
-    top: 2784px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--active-color);
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: var(--active-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-text {
+    color: var(--text-white);
+    text-transform: capitalize;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    background: #2196f3;
     letter-spacing: 0.06em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: var(--text-white);
-    text-transform: capitalize;
+    text-align: left;
+    margin-right: 10px;
 }
+.foot-email-svg {
+    fill: var(--text-white);
+}
+
 /********************* PORTFOLIO *********************/
 
 .but-filter {
@@ -627,23 +657,10 @@ img {
     letter-spacing: 0.03em;
     color: #ffffff;
     background-color: var(--port-text-img);
-    animation-name: textup;
-    animation-duration: 1500ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* transform: translateY(100%); */
-    /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@keyframes textup {
-    0% {
-        top: 100%;
-        left: 0;
-    }
-    100% {
-        top: 0;
-        left: 0;
-    }
-}
+
 .bord-port:hover .port-text {
-    /* transform: translateY(0); */
+    transform: translateY(0);
 }

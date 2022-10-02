@@ -268,6 +268,7 @@ img {
     transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
+    padding: 40px;
     border-radius: 4px;
     background-color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -298,7 +299,7 @@ img {
     fill: var(--active-color);
 }
 .title-modal {
-    padding-top: 40px;
+    /* padding-top: 40px; */
     font-size: 20px;
     line-height: 23px;
     text-align: center;
@@ -311,13 +312,19 @@ img {
 .item-modal {
     display: flex;
     flex-direction: column;
-    margin-left: 41px;
     margin-bottom: 10px;
 }
 .block-input {
     position: relative;
+    margin-top: 5px;
 }
-
+.label-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--contacts-color);
+}
 .input-modal,
 .input-coment {
     height: 40px;
@@ -326,34 +333,47 @@ img {
     border: 1px solid rgba(33, 33, 33, 0.2);
     outline: none;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 14px;
     letter-spacing: 0.01em;
     padding: 12px 42px;
-    color: rgba(117, 117, 117, 0.5);
+    color: var(--logo-black);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-coment {
     height: 120px;
     padding: 12px 16px;
     resize: none;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .block-input:hover svg,
 .block-input:focus svg {
     fill: var(--active-color);
 }
 
+.block-agreement {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--contacts-color);
+}
+
 .input-modal:hover,
 .input-modal:focus,
 .input-coment:hover,
-.input-coment:focus,
-.input-modal:visited {
+.input-coment:focus {
     cursor: pointer;
     border-color: var(--active-color);
     fill: var(--active-color);
 }
-.input-modal:focus svg,
-.input-modal:hover svg,
 .input-modal:focus + .icon-modal,
 .input-modal:hover + .icon-modal {
     fill: var(--active-color);
@@ -367,11 +387,22 @@ img {
     fill: var(--text-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.agreement {
+    color: var(--active-color);
+    text-decoration: underline;
+}
+
+.checkbox-accept {
+    border: 4px;
+}
 .btn-send {
     cursor: pointer;
-    position: absolute;
-    left: 165px;
-    bottom: 40px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
     width: 200px;
     height: 50px;
     border-radius: 4px;

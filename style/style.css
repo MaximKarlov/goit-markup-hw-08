@@ -252,6 +252,7 @@ img {
     left: 0;
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
+
     transition-property: scale(2.5);
     transition-duration: 1500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -269,6 +270,7 @@ img {
     width: 528px;
     height: 581px;
     padding: 40px;
+    z-index: 1;
     border-radius: 4px;
     background-color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -358,6 +360,7 @@ img {
 .block-agreement {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 10px;
     font-weight: 400;
     font-size: 14px;
@@ -392,9 +395,36 @@ img {
     color: var(--active-color);
     text-decoration: underline;
 }
+.accept {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+}
+.icon-accept {
+    display: inline-block;
+    margin-right: 7px;
+    align-items: center;
+    width: 16px;
+    height: 15px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+.chekbox-accept {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
 
-.checkbox-accept {
-    border: 4px;
+.chekbox-accept:checked ~ .icon-accept {
+    background-color: var(--active-color);
+    background-image: url("../img/check.svg");
+    fill: var(--text-white);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
 }
 .btn-send {
     cursor: pointer;

@@ -61,8 +61,8 @@
                         <div class="backdrop is-hidden" data-modal>
                             <form action="" autocomplete="off" class="modal">
                                 <h2 class="title-modal">залиште свої дані, ми вам передзвонимо</h2>
-                                <ul>
-                                    <li class="item-modal">
+                                    <ul> 
+                                                                             <li class="item-modal">
                                         <label for="name" class="label-text"> Ім'я</label>
                                         <div class="block-input">
                                             <input type="text" name="name" id="name" class="input-modal" />
@@ -70,8 +70,7 @@
                                                 <use href="./img/icons.svg#modal-person"></use>
                                             </svg>
                                         </div>
-                                    </li>
-                                    <li class="item-modal">
+                                    </li>                                   <li class="item-modal">
                                         <label for="phone" class="label-text">Телефон</label>
                                         <div class="block-input">
                                             <input type="tel" name="tel" id="phone" class="input-modal" />
@@ -88,8 +87,7 @@
                                                 <use href="./img/icons.svg#modal-email"></use>
                                             </svg>
                                         </div>
-                                    </li>
-                                    <li class="item-modal">
+                                    </li>                                   <li class="item-modal">
                                         <label for="comments" class="label-text">Коментар</label>
                                         <textarea
                                             name="comments"
@@ -100,14 +98,17 @@
                                             class="input-coment"></textarea>
                                     </li>
                                     <div class="item-modal block-agreement">
-                                        <label for="accept"></label>
-                                        <!-- <div class="block-agreement"> -->
+                                        <label for="accept" class="accept">
+ 
                                             <input type="checkbox" name="accept" id="accept" class="chekbox-accept" />
-                                            <span> Погоджуюся з розсилкою та приймаю    
-                                            <a href="" class="agreement">Умови договору</a></span> 
-                                        <!-- </div> -->
+                                            <span class="icon-accept"></span> 
+                                            <span>Погоджуюся з розсилкою та приймаю  
+                                             
+                                            <a href="" class="agreement"> Умови договору</a></span> </label>
+
                                     <div>
-                                </ul>
+
+                                    </ul>
                                 <button type="submit" class="btn-send">Відправити</button>
                                 <button data-modal-close class="but-close">
                                     <svg width="11" height="11" class="close-icon">
@@ -544,12 +545,12 @@
                         </li>
                         <li class="subscribe">
                             <h3 class="foot-h3">підпишіться на розсилку</h3>
-                            <div class="subscribe-element">
+                            <form name="subscribe"  autocomplete="off" va class="subscribe-element" >
                                 <input
                                     type="email"
                                     name="email"
                                     placeholder="E-mail"
-                                    autocomplete="none"
+                                    autocomplete="off"
                                     class="input-email" />
                                 <button type="submit" class="subscribe-btn">
                                     <p class="subscribe-text">підписатись</p>
@@ -557,7 +558,7 @@
                                         <use href="./img/icons.svg#subscribe"></use>
                                     </svg>
                                 </button>
-                            </div>
+                            </form>
                         </li>
                     </ul>
                 </div>

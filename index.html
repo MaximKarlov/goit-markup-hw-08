@@ -59,20 +59,27 @@
                         <h1 class="efectchoise">Ефективні рішення для вашого бізнесу</h1>
                         <button type="button" class="but-order" data-modal-open>Замовити послугу</button>
                         <div class="backdrop is-hidden" data-modal>
-                            <div class="modal">
+                            <form action="" autocomplete="off" class="modal">
                                 <h2 class="title-modal">залиште свої дані, ми вам передзвонимо</h2>
                                 <ul>
                                     <li class="item-modal">
-                                        <label for="name">Ім'я</label>
-                                        <input type="text" name="name" id="name" class="input-modal" />
+                                        <label for="name">
+                                            Ім'я
+                                            <div class="block-input">
+                                                <svg width="18" height="18" class="icon-modal">
+                                                    <use href="./img/icons.svg#modal-person"></use>
+                                                </svg>
+                                                <input type="text" name="name" id="name" class="input-modal" />
+                                            </div>
+                                        </label>
                                     </li>
                                     <li class="item-modal">
                                         <label for="phone" title="Тел.">Телефон</label>
-                                        <input type="tel" name="tel" id="phone" class="input-modal" />
+                                        <div><input type="tel" name="tel" id="phone" class="input-modal" /></div>
                                     </li>
                                     <li class="item-modal">
                                         <label for="email">Пошта</label>
-                                        <input type="email" name="email" id="email" class="input-modal" />
+                                        <div><input type="email" name="email" id="email" class="input-modal" /></div>
                                     </li>
                                     <li class="item-modal">
                                         <label for="comments">Коментар</label>
@@ -91,7 +98,7 @@
                                         <use href="./img/icons.svg#close"></use>
                                     </svg>
                                 </button>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </section>

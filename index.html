@@ -59,10 +59,10 @@
                         <h1 class="efectchoise">Ефективні рішення для вашого бізнесу</h1>
                         <button type="button" class="but-order" data-modal-open>Замовити послугу</button>
                         <div class="backdrop is-hidden" data-modal>
-                            <form action="" autocomplete="off" class="modal">
+                            <form name="windows-modal" autocomplete="off" class="modal">
                                 <h2 class="title-modal">залиште свої дані, ми вам передзвонимо</h2>
-                                    <ul> 
-                                     <li class="item-modal">
+                                <ul>
+                                    <li class="item-modal">
                                         <label for="name" class="label-text"> Ім'я</label>
                                         <div class="block-input">
                                             <input type="text" name="name" id="name" class="input-modal" />
@@ -70,7 +70,8 @@
                                                 <use href="./img/icons.svg#modal-person"></use>
                                             </svg>
                                         </div>
-                                    </li>                                   <li class="item-modal">
+                                    </li>
+                                    <li class="item-modal">
                                         <label for="phone" class="label-text">Телефон</label>
                                         <div class="block-input">
                                             <input type="tel" name="tel" id="phone" class="input-modal" />
@@ -87,7 +88,7 @@
                                                 <use href="./img/icons.svg#modal-email"></use>
                                             </svg>
                                         </div>
-                                    </li>                                   
+                                    </li>
                                     <li class="item-modal">
                                         <label for="comments" class="label-text">Коментар</label>
                                         <textarea
@@ -98,19 +99,7 @@
                                             placeholder="Введіть коментар"
                                             class="input-coment"></textarea>
                                     </li>
-                                    </ul>
-                                    
-                                    <div class="item-modal block-agreement">
-                                        <label for="accept" class="accept">
- 
-                                            <input type="checkbox" name="accept" id="accept" class="chekbox-accept" />
-                                            <span class="icon-accept"></span> 
-                                            <span>Погоджуюся з розсилкою та приймаю  
-                                             
-                                            <a href="" class="agreement"> Умови договору</a></span> </label>
-
-                                    <div>  
-                                
+                                </ul>
                                 <button type="submit" class="btn-send">Відправити</button>
                                 <button data-modal-close class="but-close">
                                     <svg width="11" height="11" class="close-icon">
@@ -547,7 +536,7 @@
                         </li>
                         <li class="subscribe">
                             <h3 class="foot-h3">підпишіться на розсилку</h3>
-                            <form name="subscribe"  autocomplete="off"  class="subscribe-element" >
+                            <form name="subscribe" autocomplete="off" class="subscribe-element">
                                 <input
                                     type="email"
                                     name="email"

@@ -404,9 +404,7 @@ img {
     margin-right: 7px;
 }
 .icon-accept {
-    display: inline-block;
-    margin-right: 7px;
-    align-items: center;
+    display: block;
     width: 16px;
     height: 15px;
     border-radius: 4px;
@@ -419,13 +417,12 @@ img {
     position: absolute;
 }
 
-.chekbox-accept:checked ~ .icon-accept {
+.chekbox-accept:checked + .icon-accept {
     background-color: var(--active-color);
     background-image: url("../img/check.svg");
     fill: var(--text-white);
+    background-origin: border-box;
     background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     border: none;
 }
 .btn-send {

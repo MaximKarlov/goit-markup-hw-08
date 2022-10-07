@@ -66,7 +66,8 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.navig-logo {
+.navig-logo,
+.logo {
     display: flex;
     text-decoration: none;
     font-family: "Raleway", sans-serif;
@@ -83,7 +84,8 @@ img {
 .logo-footer {
     color: var(--text-white);
 }
-.navig-list {
+.navig-list,
+.cards {
     display: flex;
     list-style: none;
     align-items: center;
@@ -228,16 +230,18 @@ img {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.2);
+    transform: translate(0, 0);
     opacity: 1;
-
-    transition-property: scale(2.5);
-    transition-duration: 1500ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-delay: 4000ms; */
 }
 
 .efectchoise-backdrop.efectchoise-is-hidden {
     opacity: 0;
     pointer-events: none;
+    transform: translate(100%, 100%);
+    transition: scale(1.5) 1300ms cubic-bezier(0.4, 0, 0.2, 1), transform 2500ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .efectchoise-modal {
     position: absolute;
@@ -247,13 +251,11 @@ img {
     width: 528px;
     height: 581px;
     padding: 40px;
-    z-index: 1;
     border-radius: 4px;
     background-color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .efectchoise-modal__title {
-    /* padding-top: 40px; */
     font-size: 20px;
     line-height: 23px;
     text-align: center;
@@ -410,7 +412,7 @@ img {
     fill: var(--active-color);
 }
 
-.efectchoise-btn_send {
+.efectchoise-btn__send {
     cursor: pointer;
     display: flex;
     margin: 0 auto;
@@ -427,27 +429,26 @@ img {
     line-height: 30px;
     letter-spacing: 0.06em;
     border: none;
-    transition: scale 1500ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation-name: selert;
+    animation-duration: 1500ms;
+    animation-iteration-count: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/*  */
-.but-list {
-    align-items: center;
-}
-
-.but:hover,
-.but:focus,
-.but-order:focus,
-.but-order:hover {
+.button-btn:hover,
+.button-btn:focus,
+.efectchoise-btn:focus,
+.efectchoise-btn:hover {
     background-color: var(--active-color);
     color: var(--text-white);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
-.but-order:hover .backdrop {
+.efectchoise-btn:hover .backdrop {
     opacity: 0;
 }
+
+/* BENEFITS CSS */
+
 .benefits {
     display: flex;
     gap: 30px;
@@ -485,6 +486,7 @@ img {
     color: var(--contacts-color);
     width: 270px;
 }
+/*  */
 
 .whatwedo,
 .ourteam,
@@ -738,7 +740,7 @@ img {
 
 /********************* PORTFOLIO *********************/
 
-.but-filter {
+.button-item {
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -747,7 +749,7 @@ img {
     margin-bottom: 50px;
 }
 
-.but {
+.button-btn {
     cursor: pointer;
     font-family: inherit;
     background-color: var(--buttons-color);
@@ -765,18 +767,18 @@ img {
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.bord-wrap {
+.cards-wrap {
     flex-wrap: wrap;
     gap: 30px;
     flex-basis: calc(100% / 3 - 30px);
 }
 
-.border {
+.cards-bord {
     border: 1px solid #eeeeee;
     border-top: none;
     padding: 20px 24px;
 }
-.title-p {
+.cards-bord__paragraph {
     color: var(--contacts-color);
     font-weight: 400;
     font-size: 16px;
@@ -784,7 +786,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: capitalize;
 }
-.title-h2 {
+.cards-bord__title {
     color: var(--text-color);
     font-style: normal;
     text-transform: capitalize;
@@ -793,18 +795,19 @@ img {
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.bord-port {
+.cards-item {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.bord-port:hover {
+
+.cards-item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.port-bottom-box {
+.cards-box {
     position: relative;
     overflow: hidden;
 }
-.port-text {
+.cards-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -820,7 +823,6 @@ img {
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.bord-port:hover .port-text {
+.cards-item:hover .cards-text {
     transform: translateY(0);
 }

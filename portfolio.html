@@ -56,147 +56,141 @@
                 <section class="section">
                     <div class="container">
                         <h1 class="visual-hidden">hiden text</h1>
-                        <ul class="but-filter">
-                            <li><button type="button" class="but">усі</button></li>
-                            <li><button type="button" class="but">веб-сайти</button></li>
-                            <li><button type="button" class="but">додатки</button></li>
-                            <li><button type="button" class="but">дизайн</button></li>
-                            <li><button type="button" class="but">маркетинг</button></li>
+                        <ul class="button-item">
+                            <li><button type="button" class="button-btn">усі</button></li>
+                            <li><button type="button" class="button-btn">веб-сайти</button></li>
+                            <li><button type="button" class="button-btn">додатки</button></li>
+                            <li><button type="button" class="button-btn">дизайн</button></li>
+                            <li><button type="button" class="button-btn">маркетинг</button></li>
                         </ul>
 
-                        <ul class="list bord-wrap">
-                            <li class="bord-port">
-                                <div class="port-bottom-box">
-                                    <img src="./img/portfolio/img-1.jpg" alt="techno_crack" width="370" />
-                                    <p class="port-text">
+                        <!-- застосовуємо цю форму для переробки на БЕМ 
+                        ul.cardscards-wrap>li.cards-item*9>(div.cards-box>img+p.cards-text)+div.cards-bord>h2.cards-bord__title+p.cards-bord__paragraph-->
+                        <ul class="cards cards-wrap">
+                            <li class="cards-item">
+                                <div class="cards-box">
+                                    <img src="./img/portfolio/img-1.jpg" alt="techno-crack" width="370" />
+                                    <p class="cards-text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
                                 </div>
-                                <div class="border">
-                                    <h2 class="title-h2">технокряк</h2>
-                                    <p class="title-p">веб-сайт</p>
+                                <div class="cards-bord">
+                                    <h2 class="cards-bord__title">технокряк</h2>
+                                    <p class="cards-bord__paragraph">веб-сайт</p>
                                 </div>
                             </li>
-                            <li class="bord-port">
-                                <div class="port-bottom-box">
-                                    <img src="./img/portfolio/img-2.jpg" alt="basketbal" width="370" />
-                                    <p class="port-text">
+                            <li class="cards-item">
+                                <div class="cards-box">
+                                    <img src="./img/portfolio/img-2.jpg" alt="" width="370" />
+                                    <p class="cards-text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
                                 </div>
-
-                                <div class="border">
-                                    <h2 class="title-h2">Постер New Orlean vs Golden Star</h2>
-                                    <p class="title-p">дизайн</p>
+                                <div class="cards-bord">
+                                    <h2 class="cards-bord__title">Постер New Orlean vs Golden Star</h2>
+                                    <p class="cards-bord__paragraph">дизайн</p>
                                 </div>
                             </li>
-                            <li class="bord-port">
-                                <div class="port-bottom-box">
-                                    <img src="./img/portfolio/img-3.jpg" alt="seafood" width="370" />
-                                    <p class="port-text">
+                            <li class="cards-item">
+                                <div class="cards-box">
+                                    <img src="./img/portfolio/img-3.jpg" alt="" width="370" />
+                                    <p class="cards-text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
                                 </div>
-
-                                <div class="border">
-                                    <h2 class="title-h2">ресторан seafood</h2>
-                                    <p class="title-p">додаток</p>
+                                <div class="cards-bord">
+                                    <h2 class="cards-bord__title">ресторан seafood</h2>
+                                    <p class="cards-bord__paragraph">додаток</p>
                                 </div>
                             </li>
-                            <li class="bord-port">
-                                <div class="port-bottom-box">
-                                    <img src="./img/portfolio/img-4.jpg" alt="headphones" width="370" />
-                                    <p class="port-text">
+                            <li class="cards-item">
+                                <div class="cards-box">
+                                    <img src="./img/portfolio/img-4.jpg" alt="" width="370" />
+                                    <p class="cards-text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
                                 </div>
-
-                                <div class="border">
-                                    <h2 class="title-h2">проект prime</h2>
-                                    <p class="title-p">маркетинг</p>
+                                <div class="cards-bord">
+                                    <h2 class="cards-bord__title">проект prime</h2>
+                                    <p class="cards-bord__paragraph">маркетинг</p>
                                 </div>
                             </li>
-                            <li class="bord-port">
-                                <div class="port-bottom-box">
-                                    <img src="./img/portfolio/img-5.jpg" alt="Boxes" width="370" />
-                                    <p class="port-text">
+                            <li class="cards-item">
+                                <div class="cards-box">
+                                    <img src="./img/portfolio/img-5.jpg" alt="" width="370" />
+                                    <p class="cards-text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
                                 </div>
-
-                                <div class="border">
-                                    <h2 class="title-h2">проект boxes</h2>
-                                    <p class="title-p">додаток</p>
+                                <div class="cards-bord">
+                                    <h2 class="cards-bord__title">проект boxes</h2>
+                                    <p class="cards-bord__paragraph">додаток</p>
                                 </div>
                             </li>
-                            <li class="bord-port">
-                                <div class="port-bottom-box">
-                                    <img src="./img/portfolio/img-6.jpg" alt="Borders" width="370" />
-                                    <p class="port-text">
+                            <li class="cards-item">
+                                <div class="cards-box">
+                                    <img src="./img/portfolio/img-6.jpg" alt="" width="370" />
+                                    <p class="cards-text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
                                 </div>
-
-                                <div class="border">
-                                    <h2 class="title-h2">inspiration has no borders</h2>
-                                    <p class="title-p">веб-сайт</p>
+                                <div class="cards-bord">
+                                    <h2 class="cards-bord__title">inspiration has no borders</h2>
+                                    <p class="cards-bord__paragraph">веб-сайт</p>
                                 </div>
                             </li>
-                            <li class="bord-port">
-                                <div class="port-bottom-box">
-                                    <img src="./img/portfolio/img-7.jpg" alt="Limited_edition" width="370" />
-                                    <p class="port-text">
+                            <li class="cards-item">
+                                <div class="cards-box">
+                                    <img src="./img/portfolio/img-7.jpg" alt="" width="370" />
+                                    <p class="cards-text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
                                 </div>
-
-                                <div class="border">
-                                    <h2 class="title-h2">видання limited edition</h2>
-                                    <p class="title-p">дизайн</p>
+                                <div class="cards-bord">
+                                    <h2 class="cards-bord__title">видання limited edition</h2>
+                                    <p class="cards-bord__paragraph">дизайн</p>
                                 </div>
                             </li>
-                            <li class="bord-port">
-                                <div class="port-bottom-box">
-                                    <img src="./img/portfolio/img-8.jpg" alt="Project_LAB" width="370" />
-                                    <p class="port-text">
+                            <li class="cards-item">
+                                <div class="cards-box">
+                                    <img src="./img/portfolio/img-8.jpg" alt="" width="370" />
+                                    <p class="cards-text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
                                 </div>
-
-                                <div class="border">
-                                    <h2 class="title-h2">проект lab</h2>
-                                    <p class="title-p">маркетинг</p>
+                                <div class="cards-bord">
+                                    <h2 class="cards-bord__title">проект lab</h2>
+                                    <p class="cards-bord__paragraph">маркетинг</p>
                                 </div>
                             </li>
-                            <li class="bord-port">
-                                <div class="port-bottom-box">
-                                    <img src="./img/portfolio/img-9.jpg" alt="Growing_business" width="370" />
-                                    <p class="port-text">
+                            <li class="cards-item">
+                                <div class="cards-box">
+                                    <img src="./img/portfolio/img-9.jpg" alt="" width="370" />
+                                    <p class="cards-text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                         приватну особу.
                                     </p>
                                 </div>
-
-                                <div class="border">
-                                    <h2 class="title-h2">growing business</h2>
-                                    <p class="title-p">додаток</p>
+                                <div class="cards-bord">
+                                    <h2 class="cards-bord__title">growing business</h2>
+                                    <p class="cards-bord__paragraph">додаток</p>
                                 </div>
                             </li>
                         </ul>

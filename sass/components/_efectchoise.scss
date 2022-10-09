@@ -194,7 +194,7 @@
     border: none;
 }
 /*  button send & button close */
-.efectchoise-btn__close {
+.efectchoise-modal__close {
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -210,16 +210,16 @@
     justify-content: center;
     align-items: center;
 }
-.efectchoise-btn__icon {
+.efectchoise-modal__close-icon {
     cursor: pointer;
     fill: var(--logo-black);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.efectchoise-btn__close:hover .close-icon,
-.efectchoise-btn__close:focus .close-icon {
+.efectchoise-modal__close:hover .efectchoise-modal__close-icon,
+.efectchoise-modal__close:focus .efectchoise-modal__close-icon {
     fill: var(--active-color);
 }
-.efectchoise-btn__send {
+.efectchoise-modal__send {
     cursor: pointer;
     display: flex;
     margin: 0 auto;

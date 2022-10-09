@@ -1,0 +1,55 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+svg {
+    display: block;
+}
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: var(--text-color);
+}
+.bodik {
+    min-width: 1200px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 30px;
+    align-items: center;
+}
+.nul-padding {
+    padding-bottom: 0;
+}
+.section {
+    padding: 94px 0;
+}
+.visual-hidden {
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 30px;
+    width: 1px;
+}

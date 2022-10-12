@@ -1,6 +1,11 @@
 .header {
-    display: flex;
-    align-items: center;
+    height: 60px;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
 }
 .navig-bord {
     border-bottom: 1px solid #ececec;
@@ -29,13 +34,24 @@
 }
 .navig-list,
 .cards {
-    display: flex;
-    list-style: none;
-    align-items: center;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+    // @media screen and (min-width: 1600px) {
+    // }
 }
 
 .navig-list__item:first-child {
-    margin-left: 93px;
+    @media screen and (min-width: 768px) {
+        margin-left: 88px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
 }
 .navig-list__item:not(:first-child) {
     margin-left: 50px;
@@ -58,19 +74,35 @@
     }
 }
 .contacts {
-    display: flex;
-    margin-left: auto;
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: auto;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
 }
 .contacts-link {
-    padding: 32px 0;
-    display: flex;
-    align-items: center;
-    &:hover,
-    &:focus {
-        color: var(--active-color);
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        &:first-child {
+            margin-bottom: 10px;
+        }
     }
-    &:not(:first-child) {
-        margin-left: 50px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        &:hover,
+        &:focus {
+            color: var(--active-color);
+        }
+        &:first-child {
+            margin-right: 50px;
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -90,8 +122,40 @@
     }
 }
 .contacts-icons {
-    margin-right: 10px;
-    fill: currentColor;
+    display: inline;
+    // justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+        margin-right: 8px;
+        fill: currentColor;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+}
+.contacts-icons__email {
+    @media screen and (min-width: 768px) {
+        width: 14px;
+        height: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+    }
+}
+.contacts-icons__phone {
+    @media screen and (min-width: 768px) {
+        width: 10px;
+        height: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 12px;
+        height: 16px;
+    }
 }
 
 .navig-list__active {

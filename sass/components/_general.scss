@@ -21,9 +21,9 @@ body {
     font-size: 14px;
     color: var(--text-color);
 }
-.bodik {
-    min-width: 1200px;
-}
+// .bodik {
+//     min-width: 1200px;
+// }
 
 img {
     display: block;
@@ -31,12 +31,20 @@ img {
     height: auto;
 }
 .container {
-    width: 1200px;
-    margin: 0 auto;
+    width: 450px;
+    gap: 30px;
+    display: flex;
     padding-left: 15px;
     padding-right: 15px;
-    gap: 30px;
+
     align-items: center;
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        margin: 0 auto;
+    }
 }
 .nul-padding {
     padding-bottom: 0;

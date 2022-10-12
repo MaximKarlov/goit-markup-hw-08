@@ -1,9 +1,17 @@
 .efectchoise {
+    width: 480px;
     background-color: #2f303a;
     background: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     padding: 200px 0;
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1600px) {
+        width: 1600px;
+    }
 }
 
 .efectchoise-title {

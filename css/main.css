@@ -329,6 +329,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 118px 0;
 }
 @media screen and (min-width: 768px) {
   .efectchoise {
@@ -357,12 +358,9 @@ img {
   text-transform: uppercase;
   color: var(--text-white);
   margin: 0 auto;
-  padding-top: 118px;
-  padding-bottom: 198px;
 }
 @media screen and (min-width: 1200px) {
   .efectchoise-title {
-    padding: 0;
     max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
@@ -371,22 +369,22 @@ img {
 
 .efectchoise-btn {
   display: block;
+  border-radius: 4px;
+  border: none;
+  margin: 0 auto;
+  font-family: inherit;
+  font-weight: 700;
+  background-color: rgb(24, 140, 232);
+  color: var(--text-white);
+  margin-top: 30px;
+  padding: 10px 32px;
 }
 @media screen and (min-width: 1200px) {
   .efectchoise-btn {
     cursor: pointer;
-    font-family: inherit;
-    font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
-    background-color: rgb(24, 140, 232);
-    color: var(--text-white);
     letter-spacing: 0.06em;
-    border: none;
-    border-radius: 4px;
-    margin: 0 auto;
-    margin-top: 30px;
-    padding: 10px 32px;
     -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);

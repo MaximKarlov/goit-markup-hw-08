@@ -38,6 +38,7 @@ img {
   display: flex;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -319,6 +320,7 @@ img {
 }
 
 .efectchoise {
+  margin: 0 auto;
   max-width: 480px;
   max-height: 400px;
   background-color: #2f303a;

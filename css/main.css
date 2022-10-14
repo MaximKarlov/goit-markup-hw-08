@@ -523,6 +523,11 @@ img {
   padding: 12px 42px;
   color: var(--logo-black);
 }
+.efectchoise-modal__input:focus,
+.efectchoise-modal__coment:focus {
+  border-color: var(--active-color);
+  fill: var(--active-color);
+}
 @media screen and (min-width: 1200px) {
   .efectchoise-modal__input,
 .efectchoise-modal__coment {
@@ -606,6 +611,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .efectchoise-modal__icon {
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
     left: 15px;
     fill: var(--text-color);
     -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -624,7 +631,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;

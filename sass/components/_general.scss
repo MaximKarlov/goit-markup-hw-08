@@ -21,6 +21,7 @@ body {
     font-size: 14px;
     color: var(--text-color);
 }
+
 // .bodik {
 //     min-width: 1200px;
 // }
@@ -32,16 +33,14 @@ img {
 }
 .container {
     width: 450px;
-    gap: 30px;
     display: flex;
     margin: 0 auto;
     align-items: center;
     @media screen and (min-width: 768px) {
-        min-width: 768px;
+        min-width: 738px;
     }
     @media screen and (min-width: 1200px) {
-        min-width: 1200px;
-        margin: 0 auto;
+        min-width: 1170px;
     }
 }
 .nul-padding {

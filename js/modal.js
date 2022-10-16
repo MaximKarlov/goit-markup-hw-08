@@ -5,6 +5,7 @@
         modal: document.querySelector("[data-modal]"),
     };
 
+    // document.body.style.overflow = "hidden";
     refs.openModalBtn.addEventListener("click", toggleModal);
     refs.closeModalBtn.addEventListener("click", toggleModal);
 

@@ -1,20 +1,21 @@
 .efectchoise {
     margin: 0 auto;
-    max-width: 480px;
-    max-height: auto;
+    width: 480px;
+    height: auto;
     background-color: #2f303a;
     background: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise-480-1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 118px 0;
+
     @media screen and (min-width: 768px) {
         max-width: 768px;
         background: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise-768-1x.jpg");
     }
     @media screen and (min-width: 1200px) {
         max-width: 1600px;
-        max-height: 600px;
+        height: 600px;
         padding: 200px 0;
         background: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise-1200-1x.jpg");
     }
@@ -81,6 +82,9 @@
     transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1);
     /* transition-delay: 4000ms; */
 }
+.efectchoise-backdrop::after {
+    overflow-y: hidden;
+}
 
 .efectchoise-backdrop.efectchoise-is-hidden {
     opacity: 0;
@@ -90,6 +94,7 @@
 }
 .efectchoise-modal {
     position: absolute;
+    overflow: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

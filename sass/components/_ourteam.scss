@@ -1,26 +1,38 @@
-.container-ourteam {
-    flex-wrap: wrap;
-}
 .ourteam-img {
     flex-wrap: wrap;
-    width: 450px;
     gap: 30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+.container-ourteam {
+    display: block;
 }
 .bord {
-    height: auto;
+    max-width: 450px;
     background-color: var(--text-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     border: 1px solid var(--border-line);
+    display: block;
     border: none;
     align-items: center;
+    margin-bottom: 30px;
+    @media screen and(min-width:768px) {
+        max-width: 354px;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+    }
 }
 .ourteambox {
     background-color: var(--buttons-color);
 }
-// .ourteam {
-//     min-width: 264px;
-// }
+.ourteam {
+    min-width: 264px;
+}
 .ourteam::first-letter,
 .whatwedo::first-letter,
 .regular-customers-h2::first-letter {
@@ -43,10 +55,9 @@
     font-weight: 400;
 }
 .ourteam-pad {
-    // padding: 30px 0;
+    padding: 30px 0;
 }
-.ourteam-soc,
-.regular-customers {
+.ourteam-soc {
     display: flex;
     align-items: center;
     justify-content: center;

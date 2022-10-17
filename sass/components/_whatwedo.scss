@@ -2,13 +2,16 @@
     display: none;
     @media screen and(min-width:1200px) {
         display: contents;
-        padding-top: 0;
+        // padding-top: 0;
     }
 }
 
 .container-whatwedo {
     display: flex;
     flex-wrap: wrap;
+    @media screen and(min-width:1200px) {
+        padding-bottom: 94px;
+    }
 }
 .whatwedo,
 .ourteam,

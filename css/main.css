@@ -1182,8 +1182,7 @@ img {
 }
 
 .subscribe {
-  display: block;
-  margin: 12px 0 0 93px;
+  margin: 0 auto;
 }
 
 .footaddr-align {
@@ -1212,6 +1211,9 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .foot-social {
@@ -1219,6 +1221,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
   gap: 10px;
 }
 
@@ -1230,9 +1233,9 @@ img {
 
 .input-email {
   border: 1px solid rgba(255, 255, 255, 0.3);
-  width: 358px;
+  width: 450px;
   height: 50px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   background-color: var(--foot-box-color);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1244,8 +1247,14 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.input-email:hover, .input-email:focus {
-  outline: none;
+@media screen and (min-width: 1200px) {
+  .input-email {
+    width: 358px;
+    margin-right: 12px;
+  }
+  .input-email:hover, .input-email:focus {
+    outline: none;
+  }
 }
 
 .subscribe-btn {

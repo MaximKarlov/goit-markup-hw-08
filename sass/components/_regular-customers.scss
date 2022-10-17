@@ -1,7 +1,11 @@
+.container-customers {
+    flex-direction: column;
+}
 .regular-customers {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
 }
 .regular-customers-icon {
     width: 106px;

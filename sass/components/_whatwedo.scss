@@ -11,6 +11,8 @@
     flex-wrap: wrap;
     @media screen and(min-width:1200px) {
         padding-bottom: 94px;
+        display: grid;
+        justify-content: center;
     }
 }
 .whatwedo,

@@ -21,9 +21,9 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 20px;
-    // @media screen and(min-width:1200px) {
-    //     padding-bottom: 20px;
-    // }
+    @media screen and(min-width:1200px) {
+        justify-content: left;
+    }
 }
 .foot_info {
     display: block;
@@ -33,6 +33,12 @@
     display: block;
     padding: 60px 0;
     justify-content: center;
+    @media screen and(min-width:768px) {
+        padding: 0 0 102px 0;
+    }
+    @media screen and(min-width:1200px) {
+        padding: 12px 0 0 70px;
+    }
 }
 .subscribe {
     margin: 0 auto;
@@ -40,6 +46,9 @@
 
 .footaddr-align {
     text-align: center;
+    @media screen and(min-width:1200px) {
+        text-align: left;
+    }
 }
 .footaddr-align:not(:last-child) {
     margin-bottom: 8px;
@@ -69,11 +78,18 @@
 .foot-special {
     display: block;
     flex-wrap: wrap;
+    @media screen and(min-width:768px) {
+        display: flex;
+        justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+    }
 }
 
 .input-email {
     border: 1px solid rgba(255, 255, 255, 0.3);
-    width: 450px;
+    width: calc(100vw - 30px);
     height: 50px;
     margin-bottom: 20px;
     background-color: var(--foot-box-color);
@@ -86,10 +102,12 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     @media screen and(min-width:768px) {
+        width: 450px;
+        margin: 0 152px 20px 152px;
     }
     @media screen and(min-width:1200px) {
         width: 358px;
-        margin-right: 12px;
+        margin: 0 12px 0 93px;
         &:hover,
         &:focus {
             outline: none;

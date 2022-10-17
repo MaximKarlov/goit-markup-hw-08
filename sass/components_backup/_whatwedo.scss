@@ -1,3 +1,8 @@
+.container-whatwedo {
+    @media screen and {
+    }
+    display: grid;
+}
 .whatwedo,
 .ourteam,
 .regular-customers-h2 {
@@ -11,11 +16,11 @@
 .whatwedo {
     min-width: 366px;
 }
-.whatwedo-img,
-.ourteam-img {
+.whatwedo-img {
     display: flex;
     align-items: center;
     gap: 30px;
+    justify-content: center;
 }
 .positition {
     position: fixed;

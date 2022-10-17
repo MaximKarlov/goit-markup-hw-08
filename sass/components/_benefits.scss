@@ -1,8 +1,8 @@
 /* BENEFITS CSS */
 
 .benefits {
-    display: column;
-    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;

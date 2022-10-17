@@ -31,7 +31,7 @@ img {
 }
 
 .container {
-  min-width: 450px;
+  min-width: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,9 +39,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 0 15px;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -95,6 +93,7 @@ img {
 
 .header {
   height: 60px;
+  padding: 0 15px;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -104,7 +103,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 15px;
     height: 100%;
   }
 }
@@ -326,7 +324,7 @@ img {
 
 .efectchoise {
   margin: 0 auto;
-  min-width: 450px;
+  min-width: 480px;
   height: auto;
   background-color: #2f303a;
   background: -webkit-gradient(linear, left top, left bottom, from(var(--overlay)), to(var(--overlay))), url("../img/efectchoise-480-1x.jpg");
@@ -781,10 +779,11 @@ img {
 
 /* BENEFITS CSS */
 .benefits {
-  display: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .benefits {
@@ -979,7 +978,7 @@ img {
 }
 
 .bord {
-  max-width: 450px;
+  max-width: 480px;
   background-color: var(--text-white);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1007,7 +1006,7 @@ img {
 }
 
 .ourteambox {
-  min-width: 450px;
+  min-width: 480px;
   background-color: var(--buttons-color);
 }
 
@@ -1152,6 +1151,7 @@ img {
 }
 
 .footbox {
+  min-width: 480px;
   background-color: var(--foot-box-color);
 }
 

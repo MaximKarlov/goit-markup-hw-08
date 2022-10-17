@@ -1,4 +1,5 @@
 .footbox {
+    min-width: 480px;
     background-color: var(--foot-box-color);
 }
 .footaddr {
@@ -35,8 +36,6 @@
 }
 .subscribe {
     margin: 0 auto;
-    // display: block;
-    // margin: 12px 0 0 93px;
 }
 
 .footaddr-align {

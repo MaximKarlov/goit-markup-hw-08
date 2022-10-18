@@ -1,5 +1,12 @@
 /********************* PORTFOLIO *********************/
-
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and(min-width:1200px) {
+        display: block;
+        margin: 0 auto;
+    }
+}
 .button-item {
     display: flex;
     min-width: 450px;
@@ -9,7 +16,10 @@
     gap: 8px;
     margin-bottom: 50px;
     @media screen and(min-width:768px) {
-        margin: 0 auto;
+        margin: 0 auto 50px auto;
+    }
+    @media screen and(min-width:1200px) {
+        justify-content: center;
     }
 }
 
@@ -50,13 +60,25 @@
     @media screen and(min-width:768px) {
         flex-wrap: wrap;
         flex-direction: row;
+        align-items: flex-start;
+    }
+    @media screen and(min-width:1200px) {
+        justify-content: center;
+        width: 1170px;
+        gap: 30px;
     }
 }
 .cards-bord {
+    width: 450px;
+
     border: 1px solid #eeeeee;
     border-top: none;
     padding: 20px 24px;
+    @media screen and(min-width:768px) {
+        width: 354px;
+    }
 }
+
 .cards-bord__paragraph {
     color: var(--contacts-color);
     font-weight: 400;
@@ -73,11 +95,18 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    flex-wrap: wrap;
 }
-.cards-item {
+.cards-box__image {
     width: 450px;
     @media screen and(min-width:768px) {
         width: 354px;
+    }
+}
+.cards-item {
+    min-width: 450px;
+    @media screen and(min-width:768px) {
+        min-width: 354px;
     }
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {

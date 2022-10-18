@@ -1391,6 +1391,20 @@ img {
 }
 
 /********************* PORTFOLIO *********************/
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .buttons {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .button-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1405,7 +1419,14 @@ img {
 }
 @media screen and (min-width: 768px) {
   .button-item {
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1455,13 +1476,31 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 1170px;
+    gap: 30px;
   }
 }
 
 .cards-bord {
+  width: 450px;
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
+}
+@media screen and (min-width: 768px) {
+  .cards-bord {
+    width: 354px;
+  }
 }
 
 .cards-bord__paragraph {
@@ -1481,10 +1520,21 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards-box__image {
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .cards-box__image {
+    width: 354px;
+  }
 }
 
 .cards-item {
-  width: 450px;
+  min-width: 450px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1492,7 +1542,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .cards-item {
-    width: 354px;
+    min-width: 354px;
   }
 }
 .cards-item:hover {
@@ -1599,7 +1649,7 @@ img {
 }
 
 .subscribe {
-  margin: 0 auto;
+  margin-top: 12px;
 }
 
 .footaddr-align {

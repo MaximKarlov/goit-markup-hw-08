@@ -11,6 +11,7 @@
         justify-content: center;
     }
 }
+
 .navig-bord {
     border-bottom: 1px solid #ececec;
 }
@@ -46,12 +47,20 @@
     }
 }
 .navig-menu__link {
-    width: 40px;
-    height: 40px;
+    min-height: 40px;
+    min-width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
 }
+
 .navig-menu__icon {
     fill: var(--logo-black);
 }

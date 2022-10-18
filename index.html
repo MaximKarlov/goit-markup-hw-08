@@ -48,11 +48,46 @@
                         </svg>
                         +38 096 111 11 11</a>
                 </div>
-                <div class="navig-menu">
-                    <a href="" class="navig-menu__link"><svg width="24" height="16" class="navig-menu__icon">
+                <div class="navig-menu ">
+                    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <!-- class="navig-menu__link" -->
+                        <svg width="24" height="16" class="navig-menu__icon">
                             <use href="./img/icons.svg#icon-menu"></use>
-                        </svg> </a>
+                        </svg>
+                    </button>
+                    <div class="menu-container js-menu-container" id="mobile-menu">
+                        <button class="menu-toggle js-close-menu">
+                            <svg fill="black" width="19" height="19">
+                                <use href="./img/icons.svg#close"></use>
+                            </svg>
+                        </button>
 
+                        <ul class="mobile-menu">
+                            <li class="mobile-menu__item">
+                                <a href="index.html" class="mobile-menu__link mobile-menu__active">студія</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="portfolio.html" class="mobile-menu__link">портфоліо</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="contact.html" class="mobile-menu__link">контакти</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="tel:+380961111111" class="menu-mobile__phone">+38 096 111 11 11</a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="mailto:info@devstudio.com" class="menu-mobile__email">info@devstudio.com</a>
+                            </li>
+                            <ul class="menu-social">
+                                <li class="menu-social__item"><a class="menu-social__link">instagram</a></li>
+                                <li class="menu-social__item"><a class="menu-social__link">twitter</a></li>
+                                <li class="menu-social__item"><a class="menu-social__link">facebook</a></li>
+                                <li class="menu-social__item"><a class="menu-social__link">linkedin</a></li>
+                            </ul>
+
+
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -431,6 +466,7 @@
             </section>
         </main>
 
+
         <!-- Footer address -->
         <footer class="footbox foot-pad">
             <div class="container">
@@ -507,6 +543,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

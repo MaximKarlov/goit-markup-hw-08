@@ -82,8 +82,7 @@
     transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1);
     /* transition-delay: 4000ms; */
 }
-.efectchoise-backdrop::after {
-    overflow-y: hidden;
+.efectchoise-backdrop:active {
 }
 
 .efectchoise-backdrop.efectchoise-is-hidden {
@@ -94,7 +93,6 @@
 }
 .efectchoise-modal {
     position: absolute;
-    overflow: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -109,6 +107,9 @@
         height: 581px;
         padding: 40px;
     }
+}
+.efectchoise-modal:active {
+
 }
 .efectchoise-modal__title {
     margin: 40px 40px 12px 40px;

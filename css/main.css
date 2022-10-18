@@ -821,6 +821,9 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .benefits {

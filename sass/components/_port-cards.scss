@@ -2,11 +2,15 @@
 
 .button-item {
     display: flex;
-    justify-content: center;
+    min-width: 450px;
+    flex-wrap: wrap;
     cursor: pointer;
     font-family: inherit;
     gap: 8px;
     margin-bottom: 50px;
+    @media screen and(min-width:768px) {
+        margin: 0 auto;
+    }
 }
 
 .button-btn {
@@ -33,12 +37,21 @@
     }
 }
 
-.cards-wrap {
-    flex-wrap: wrap;
+// .cards-wrap {
+//     flex-wrap: wrap;
+//     gap: 30px;
+//     flex-basis: calc(100% / 3 - 30px);
+// }
+.cards {
+    display: flex;
+    flex-direction: column;
     gap: 30px;
-    flex-basis: calc(100% / 3 - 30px);
+    margin: 0 auto;
+    @media screen and(min-width:768px) {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }
-
 .cards-bord {
     border: 1px solid #eeeeee;
     border-top: none;
@@ -62,6 +75,10 @@
     letter-spacing: 0.06em;
 }
 .cards-item {
+    width: 450px;
+    @media screen and(min-width:768px) {
+        width: 354px;
+    }
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);

@@ -13,6 +13,7 @@
 }
 
 .navig-bord {
+    min-width: 480px;
     border-bottom: 1px solid #ececec;
 }
 .navig {
@@ -38,13 +39,17 @@
     color: var(--logo-black);
 }
 .navig-menu {
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 8px;
-    // transform: translate(-50%, -50%);
+    // // transform: translate(-50%, -50%);
     @media screen and(min-width:768px) {
         display: none;
     }
+    // min-height: 80px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-end;
 }
 .navig-menu__link {
     min-height: 40px;

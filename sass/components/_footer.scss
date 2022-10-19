@@ -1,13 +1,13 @@
-.footbox {
-    max-width: 480px;
+// .footbox {
+//     max-width: 480px;
 
-    @media screen and(min-width:768px) {
-        max-width: 768px;
-    }
-    @media screen and(min-width:1200px) {
-        min-width: 100%;
-    }
-}
+//     @media screen and(min-width:768px) {
+//         max-width: 768px;
+//     }
+//     @media screen and(min-width:1200px) {
+//         min-width: 100%;
+//     }
+// }
 .footaddr {
     color: var(--text-white);
     font-style: normal;
@@ -118,7 +118,7 @@
 
 .input-email {
     border: 1px solid rgba(255, 255, 255, 0.3);
-    width: calc(100% - 30px);
+    width: 100%;
     height: 50px;
     margin-bottom: 20px;
     outline: none;

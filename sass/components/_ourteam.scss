@@ -30,15 +30,16 @@
     }
 }
 .ourteambox {
-    max-width: 480px;
     background-color: var(--buttons-color);
-    margin: 0 auto;
-    @media screen and(min-width:768px) {
-        max-width: 768px;
-    }
-    @media screen and(min-width:1200px) {
-        min-width: 100%;
-    }
+    // max-width: 480px;
+
+    // margin: 0 auto;
+    // @media screen and(min-width:768px) {
+    //     max-width: 768px;
+    // }
+    // @media screen and(min-width:1200px) {
+    //     min-width: 100%;
+    // }
 }
 .ourteam {
     max-width: 264px;

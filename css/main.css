@@ -1583,7 +1583,7 @@ img {
 }
 
 .footbox {
-  min-width: 480px;
+  max-width: 480px;
   background-color: var(--foot-box-color);
 }
 

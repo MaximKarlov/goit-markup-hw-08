@@ -122,7 +122,7 @@ img {
 }
 
 .navig-bord {
-  min-width: 480px;
+  max-width: 480px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -1237,6 +1237,12 @@ img {
 .ourteambox {
   max-width: 450px;
   background-color: var(--buttons-color);
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .ourteambox {
+    margin: 0;
+  }
 }
 
 .ourteam {

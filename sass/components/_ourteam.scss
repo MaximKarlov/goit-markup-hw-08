@@ -32,6 +32,10 @@
 .ourteambox {
     max-width: 450px;
     background-color: var(--buttons-color);
+    margin: 0 auto;
+    @media screen and(min-width:768px) {
+        margin: 0;
+    }
 }
 .ourteam {
     max-width: 264px;

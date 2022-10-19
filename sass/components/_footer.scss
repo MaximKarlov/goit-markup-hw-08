@@ -1,8 +1,11 @@
 .footbox {
     max-width: 480px;
-    background-color: var(--foot-box-color);
+
     @media screen and(min-width:768px) {
         max-width: 768px;
+    }
+    @media screen and(min-width:1200px) {
+        min-width: 100%;
     }
 }
 .footaddr {
@@ -19,6 +22,7 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    background-color: var(--foot-box-color);
 }
 .logo-pad {
     display: flex;
@@ -43,6 +47,7 @@
     }
     @media screen and(min-width:1200px) {
         padding: 12px 0 0 70px;
+        margin: 0;
     }
 }
 .subscribe {
@@ -57,7 +62,11 @@
         padding-top: 60px;
     }
     @media screen and(min-width:1200px) {
-        padding: 12px 0 0 70px;
+        display: block;
+        padding: 12px 0 0 93px;
+        & .subscribe-element {
+            flex-direction: row;
+        }
     }
 }
 
@@ -128,6 +137,8 @@
     }
     @media screen and(min-width:1200px) {
         max-width: 358px;
+        margin-bottom: 0;
+        margin-right: 12px;
     }
 }
 .input-email:hover,

@@ -133,7 +133,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .navig-bord {
-    max-width: 1200px;
+    min-width: 1200px;
   }
 }
 
@@ -556,13 +556,16 @@ img {
   color: #2196f3;
 }
 
+.efectchoise-background {
+  background-color: #2f303a;
+}
+
 .efectchoise {
   margin: 0 auto;
   max-width: 480px;
   height: auto;
-  background-color: #2f303a;
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--overlay)), to(var(--overlay))), url("../img/efectchoise-480-1x.jpg");
-  background: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise-480-1x.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay)), to(var(--overlay))), url("../img/efectchoise-480-1x.jpg");
+  background-image: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise-480-1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -571,8 +574,8 @@ img {
 @media screen and (min-width: 768px) {
   .efectchoise {
     max-width: 768px;
-    background: -webkit-gradient(linear, left top, left bottom, from(var(--overlay)), to(var(--overlay))), url("../img/efectchoise-768-1x.jpg");
-    background: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise-768-1x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay)), to(var(--overlay))), url("../img/efectchoise-768-1x.jpg");
+    background-image: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise-768-1x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -580,8 +583,8 @@ img {
     max-width: 1600px;
     height: 600px;
     padding: 200px 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(var(--overlay)), to(var(--overlay))), url("../img/efectchoise-1200-1x.jpg");
-    background: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise-1200-1x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay)), to(var(--overlay))), url("../img/efectchoise-1200-1x.jpg");
+    background-image: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise-1200-1x.jpg");
   }
 }
 
@@ -1257,7 +1260,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .ourteambox {
-    max-width: 1200px;
+    min-width: 100%;
   }
 }
 
@@ -1510,7 +1513,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 1170px;
+    min-width: 1200px;
     gap: 30px;
   }
 }
@@ -1606,11 +1609,15 @@ img {
 
 .footbox {
   max-width: 480px;
-  background-color: var(--foot-box-color);
 }
 @media screen and (min-width: 768px) {
   .footbox {
     max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footbox {
+    min-width: 100%;
   }
 }
 
@@ -1632,6 +1639,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  background-color: var(--foot-box-color);
 }
 
 .logo-pad {
@@ -1676,6 +1684,7 @@ img {
 @media screen and (min-width: 1200px) {
   .joins {
     padding: 12px 0 0 70px;
+    margin: 0;
   }
 }
 
@@ -1704,7 +1713,14 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
-    padding: 12px 0 0 70px;
+    display: block;
+    padding: 12px 0 0 93px;
+  }
+  .subscribe .subscribe-element {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -1805,6 +1821,8 @@ img {
 @media screen and (min-width: 1200px) {
   .input-email {
     max-width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
   }
 }
 

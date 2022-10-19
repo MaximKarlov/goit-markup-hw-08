@@ -2,7 +2,6 @@
     display: none;
     @media screen and(min-width:1200px) {
         display: contents;
-        // padding-top: 0;
     }
 }
 
@@ -36,8 +35,7 @@
 .positition {
     position: fixed;
 }
-.bottom-box
-/* .port-bottom-box  */ {
+.bottom-box {
     position: relative;
     width: 100%;
     height: 100%;

@@ -1,9 +1,11 @@
+.efectchoise-background {
+    background-color: #2f303a;
+}
 .efectchoise {
     margin: 0 auto;
     max-width: 480px;
     height: auto;
-    background-color: #2f303a;
-    background: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise-480-1x.jpg");
+    background-image: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise-480-1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -11,13 +13,14 @@
 
     @media screen and (min-width: 768px) {
         max-width: 768px;
-        background: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise-768-1x.jpg");
+        background-image: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise-768-1x.jpg");
     }
     @media screen and (min-width: 1200px) {
+        // background-size: 1600px;
         max-width: 1600px;
         height: 600px;
         padding: 200px 0;
-        background: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise-1200-1x.jpg");
+        background-image: linear-gradient(var(--overlay), var(--overlay)), url("../img/efectchoise-1200-1x.jpg");
     }
 }
 

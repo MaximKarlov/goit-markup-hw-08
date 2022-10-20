@@ -1301,10 +1301,6 @@ img {
   gap: 10px;
 }
 
-.regular-customers {
-  gap: 30px;
-}
-
 .ourteam-social-icon {
   width: 20px;
   height: 20px;
@@ -1348,14 +1344,19 @@ img {
 }
 
 .regular-customers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .regular-customers {
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
+  }
 }
 @media screen and (min-width: 768px) {
   .regular-customers {
@@ -1671,15 +1672,6 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.subscribe .subscribe-element {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 @media screen and (min-width: 768px) {
   .subscribe {
     padding-top: 60px;
@@ -1738,9 +1730,20 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .subscribe-element {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .foot-social {
-  width: 206px;
+  max-width: 206px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

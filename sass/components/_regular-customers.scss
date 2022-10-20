@@ -2,9 +2,12 @@
     flex-direction: column;
 }
 .regular-customers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    column-count: 2;
+    column-gap: 30px;
+    @media screen and (min-width: 768px) {
+        column-count: 3;
+        // flex-direction: row;
+    }
     @media screen and (min-width: 768px) {
         display: flex;
         // flex-direction: row;

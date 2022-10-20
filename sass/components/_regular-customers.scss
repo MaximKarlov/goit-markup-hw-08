@@ -1,45 +1,78 @@
+// .section {
+// }
+// .container {
+// }
 .container-customers {
-    flex-direction: column;
+    display: block;
+    // justify-items: center;
+}
+.regular-customers-h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
 }
 .regular-customers {
-    column-count: 2;
-    column-gap: 30px;
-    @media screen and (min-width: 768px) {
-        column-count: 3;
-        // flex-direction: row;
-    }
-    @media screen and (min-width: 768px) {
-        display: flex;
-        // flex-direction: row;
-    }
-}
-.regular-customers-icon {
-    width: 106px;
-    height: 60px;
-    fill: var(--social-link-color);
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.regular-click {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 210px;
+
+    gap: 30px;
+}
+.regular-customers-item {
+    display: flex;
+    width: calc(100% / 2 - 30px);
     height: 92px;
+    align-content: center;
+    justify-content: center;
     border: 1px solid #afb1b8;
+    flex-wrap: wrap;
     border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and(max-width:480px) {
+        // width: 210px;
+    }
     @media screen and(min-width:768px) {
         width: 226px;
     }
+
     @media screen and(min-width:1200px) {
         width: 170px;
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover,
-        &:hover svg,
-        &:focus,
-        &:focus svg {
-            border-color: var(--active-color);
-            fill: var(--active-color);
-        }
     }
 }
+.regular-click {
+}
+.regular-customers-icon {
+    max-width: 106px;
+    align-items: center;
+    justify-content: center;
+    fill: var(--social-link-color);
+}
+
+// OlD version
+// .regular-customers-icon {
+//     width: 106px;
+//     height: auto;
+//     fill: var(--social-link-color);
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .regular-click {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     // max-width: 210px;
+//     // height: 92px;
+//     border: 1px solid #afb1b8;
+//     border-radius: 4px;
+//     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     &:hover,
+//     &:hover svg,
+//     &:focus,
+//     &:focus svg {
+//         border-color: var(--active-color);
+//         fill: var(--active-color);
+//     }
+// }

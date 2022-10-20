@@ -9,13 +9,14 @@
 }
 .button-item {
     display: flex;
-
+    max-width: 450px;
     flex-wrap: wrap;
     cursor: pointer;
     font-family: inherit;
     gap: 8px;
     margin-bottom: 50px;
     @media screen and(min-width:768px) {
+        max-width: 768px;
         margin: 0 auto 50px auto;
     }
     @media screen and(min-width:1200px) {
@@ -47,16 +48,17 @@
     }
 }
 
-// .cards-wrap {
-//     flex-wrap: wrap;
-//     gap: 30px;
-//     flex-basis: calc(100% / 3 - 30px);
-// }
+.cards-wrap {
+    flex-wrap: wrap;
+    gap: 30px;
+}
 .cards {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 30px;
     margin: 0 auto;
+
     @media screen and(min-width:768px) {
         flex-wrap: wrap;
         flex-direction: row;
@@ -65,10 +67,10 @@
     @media screen and(min-width:1200px) {
         justify-content: center;
         min-width: 1200px;
-        gap: 30px;
     }
 }
 .cards-bord {
+    max-width: 450px;
     border: 1px solid #eeeeee;
     border-top: none;
     padding: 20px 24px;
@@ -96,9 +98,13 @@
     flex-wrap: wrap;
 }
 .cards-box__image {
-    max-width: 450px;
+    width: 450px;
     @media screen and(min-width:768px) {
-        max-width: 354px;
+        min-width: 354px;
+        height: 294px;
+    }
+    @media screen and(min-width:1200px) {
+        min-width: 370px;
     }
 }
 .cards-item {
@@ -118,6 +124,7 @@
 .cards-box {
     position: relative;
     overflow: hidden;
+    max-width: 450px;
 }
 .cards-text {
     position: absolute;

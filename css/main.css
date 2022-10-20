@@ -447,6 +447,7 @@ img {
   padding: 32px;
   background-color: var(--text-white);
   z-index: 999;
+  overflow-y: scroll;
   -webkit-transform: translateX(200%);
           transform: translateX(200%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
@@ -673,10 +674,6 @@ img {
 
 .efectchoise-modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   width: 450px;
   height: 609px;
   border-radius: 4px;
@@ -684,12 +681,40 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 319px) {
+  .efectchoise-modal {
+    top: 0;
+    left: -103px;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+@media screen and (min-width: 320px) {
+  .efectchoise-modal {
+    top: 0;
+    left: -66px;
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+  }
+}
+@media screen and (min-width: 480px) {
+  .efectchoise-modal {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
 @media screen and (min-width: 1200px) {
   .efectchoise-modal {
     width: 528px;
     height: 581px;
     padding: 40px;
   }
+}
+
+.efectchoise-modal:active {
+  overflow-y: scroll;
 }
 
 .efectchoise-modal__title {

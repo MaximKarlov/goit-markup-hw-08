@@ -29,6 +29,7 @@
     align-items: center;
     justify-content: center;
     background-color: transparent;
+
     cursor: pointer;
     border: none;
     border-radius: 50%;
@@ -52,7 +53,7 @@
     padding: 32px;
     background-color: var(--text-white);
     z-index: 999;
-
+    overflow-y: scroll;
     transform: translateX(200%);
     transition: transform 250ms ease-in-out;
 }
